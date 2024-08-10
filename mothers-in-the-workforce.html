@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/62c5908d07.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+    <link rel="shortcut icon" href="./assets/kelsey-taylor-logo.png" type="image/x-icon" />
+    <title>Mothers in the Workforce | Kelsey Taylor Project</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="nav-container">
+        <nav class="navbar">
+            <a href="index.html"><img src="./assets/kelsey-taylor-logo.png" alt="kelsey-taylor-logo" class="logo" /></a>
+            <!-- Back Arrow -->
+            <!-- <div class="tooltip">
+                <a href="index.html"><span class="tooltiptext">Go Back</span></a>
+                
+              </div> -->
+              <button class="back-button">Go Back</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        
+
+        <!-- Article Begins -->
+        <div class="container">
+            <header class="header">
+                <h1>Mothers in the Workforce: A Need, No Longer a Choice</h1>
+                <p class="author">Presented by Kelsey Taylor | Mother & Analytics Engineer</p>
+                <p class="intro">
+                    This presentation was originally published November 2022 as part of the DevMountain Data Analytics Specialization program final Capstone Project.
+                    The full presentation can be viewed on YouTube: 
+                    <a href="https://www.youtube.com/watch?v=llddQPmYU40&t=14s" target="_blank">“Mothers in the Workforce”.</a>
+                </p>
+            </header>
+    
+            <section class="content">
+                <article class="introduction">
+                    <h2>What is the problem?</h2>
+                    <p>
+                        In today's rapidly evolving economic landscape, families are increasingly finding themselves in a precarious position as the costs of essential goods such as housing and groceries continue to soar. With rising prices putting immense pressure on household budgets, many families are compelled to adopt dual-income models to stay afloat. However, this shift presents its own set of challenges. Balancing the demands of career and parenthood, managing childcare costs, and maintaining a work-life equilibrium can be incredibly taxing. 
+                    </p>
+                    <p>
+                        This analysis aims to shed light on the pressing need for employers to create family-friendly work environments that support working parents. By examining the current financial strains and their impact on families, this presentation seeks to underscore the importance of workplace policies that accommodate the realities of modern parenting and help alleviate the burden on dual-income households.
+                    </p>
+                </article>
+                <article class="data-collection">
+                    <h2>Data Collection and Analysis</h2>
+                    <div>
+                        <p>
+                            For this project, I couldn't rely on a single data set to gather all the information necessary. Consequently, I had 
+                            to collect data from multiple sources, including the U.S. Department of Labor, U.S. Bureau of Labor Statistics, OECD 
+                            Labor Force Statistics, Census.gov, and others. The next step involved cleaning and merging the data, primarily 
+                            using Excel, followed by some Python cleaning work in a Jupyter notebook.
+                        </p>
+                        <p>
+                            During my exploratory data analysis and preliminary visualizations, I utilized Python and libraries such as Pandas, 
+                            Matplotlib, and Seaborn within a Jupyter notebook. For the final visualizations, I turned to Microsoft Power BI.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./assets/mothers-workforce-assets/technologies-used.png" alt="An image of the technologies utilized">
+                    </div>
+                </article>
+    
+                <article class="cpi">
+                    <h2>Rising Consumer Prices</h2>
+                    <p>
+                        One of the most crucial indicators of our cost of living is the Consumer Price Index (CPI). The CPI reflects changes 
+                        in the purchasing power of the dollar over time. The CPI is based on a market “basket” of consumer goods and services, 
+                        comprising eight categories: food and beverages, housing, apparel, transportation, medical care, recreation, education 
+                        and communication, and miscellaneous. Housing carries the heaviest weight in the CPI, meaning that as housing costs rise, 
+                        so does the CPI.
+                    </p>
+                    <img src="./assets/mothers-workforce-assets/CPI-ppt.png" alt="A powerpoint slide with the CPI definition">
+                    <p>
+                        Examining the CPI over the last 60 years reveals a massive increase of 240 points. To put this into perspective, $150 in 1960 would buy you the same amount of goods as nearly $1,400 in 2021. Similarly, $150 in 2000 would equate to $236 in 2021. In short, prices are rising significantly. 
+                    </p>
+                    <img src="./assets/mothers-workforce-assets/CPI-60yr-trend.png" alt="Bar graph depicting CPI trend over last 60 years">
+                    </article>
+    
+                <article class="housing">
+                    <h2>Housing Prices vs. Median Income</h2>
+                    <p>
+                        Housing is a major factor in the CPI. The median sales price of U.S. homes has seen a dramatic increase over the past 
+                        six decades. In 1960, the median sales price of homes was $18,000. By 2013, it had surged to over $250,000—a quarter 
+                        of a million dollars.
+                    </p>
+                    <img src="./assets/mothers-workforce-assets/median-sale-price-US-homes.png" alt="Bar graph depicting Median Sale Price US Homes over last 60 years">
+                    <p>While rising prices in homes and other goods wouldn't be as concerning if incomes kept pace, the reality is starkly different. Comparing the rise in home prices to median income reveals a significant disparity. In 1984, the median home price was four times the median income. By 2021, it was 5.6 times the median income, and even higher in 2022.  </p>
+                    <img src="./assets/mothers-workforce-assets/median-income.png" alt="Graph depicting median income trend over 60 years">
+                </article>
+
+                <article class="US-Events">
+                    <h2>The Housing Market and Economic Events</h2>
+                    <p>
+                        To understand U.S. home prices further, we must consider historical events. In December 2007, the housing market crashed, plunging the U.S. into a financial crisis. Generally, houses either increase or maintain their value, but the 2008 Great Recession marked the first time in a century that housing prices fell. Then, in 2020, the COVID-19 pandemic led to an unprecedented 39% increase in home prices within just three years. 
+                    </p>
+                    <img src="./assets/mothers-workforce-assets/US-Events.png" alt="US events impacting cost of homes">
+                    <p>Given the skyrocketing prices, many, especially first-time homebuyers, are left wondering if there's an impending market crash. However, comparing conditions from 2007 to those of 2022 explains why most experts predict otherwise. There were 116 million households in 2007 and 128 million in 2022. New housing starts were 2.1 million in 2007, but only 1.4 million in 2022. In 2007, there were 4 million houses in inventory ready to be sold, compared to just 860,000 in 2022. With 12 million more potential buyers and significantly lower supply, demand far outweighs supply, indicating that high housing prices are likely here to stay.   </p>
+                    <img src="./assets/mothers-workforce-assets/Supply-Demand.png" alt="Chart depicting difference in housing stats from 2007 to 2022">
+                </article>
+
+                <article class="dual-income">
+                    <h2>The Necessity of Dual-Income Families</h2>
+                    <p>
+                        With the cost of living and housing only increasing, the question arises: How do we afford it? The answer lies in dual-income families. Analyzing the number of employed women per capita, particularly those aged 25 to 34, shows the greatest increase in employment since the 1960s. This age group, traditionally expected to be at home raising children, is now significantly represented in the workforce. This shift indicates that staying home to maintain the household is no longer a viable option. Women in their childbearing years must work to keep up with the cost of living.  
+                    </p>
+                    <img src="./assets/mothers-workforce-assets/women-ages-25-34-employment.png" alt="Line chart showing women ages 25-34 employment">
+                    <p>Comparing employment numbers reveals that most families already rely on combined incomes from both spouses. While there was a slight dip in 2008 due to unemployment, the overall trend continues to rise. Mothers can no longer afford to stay at home, as their families depend on their income. </p>
+                    <img src="./assets/mothers-workforce-assets/husband-and-wife-incomes.png" alt="husband and wife combined incomes">
+                </article>
+    
+                <article class="solutions">
+                    <h2>Conclusion & Proposed Solutions</h2>
+                    <p>So, what can we do about this? My answer: normalize families in work environments. They most assuredly are going to be there. Here are my proposed action steps:</p>
+                    <ol>
+                        <li>Make Companies Family-Friendly</li><p>Encourage companies to be accepting of employees' families. Don't hide your family from your employer. Companies should allow employees to have their children in the background during Zoom meetings without making it a big deal.
+                        </p>
+                        <li>Flexible Schedules</li><p>Offer flexible schedules. Many mothers, including myself, are highly productive during the morning or after their kids have gone to bed.</p>
+                        <li>Substantial Maternity and Paternity Leave</li><p>This should be standard. Supporting a mother by allowing her spouse or partner to be home during the early days with a new baby is crucial.
+                        </p>
+                        <li>Increase Part-Time Positions</li><p>Make more part-time positions available. Many parents would love to increase their family income on a part-time basis, especially when traditional working hours may not typically work for a dual-income family.
+                        </p>
+                        <li>Permanent Remote and Hybrid Positions</li><p>Make these permanent options. While we enjoy each other's company, most of us would prefer to spend our breaks with our families. Additionally, remote work allows parents more flexibility should a child become sick and not be able to attend school.
+                        </p>
+                        <li>In-House Daycares and Child Care Credits</li><p>Offer these as part of benefits packages. Imagine nurses being able to check on their children at the hospital's employee daycare during breaks, making long shifts more bearable.
+                        </p>
+                        <li>Normalize Career Breaks and Resume Gaps</li><p>They aren't a big deal, especially considering the numerous reasons someone might need a break from work.</p>
+                    </ol>
+                </article>
+
+                <article class="content">
+                    <p>By implementing these actions, we can better support both mothers and fathers in the workforce while still ensuring they can support their families.</p>
+                    <p>Thank you for watching my presentation. A special shout-out to my DevMountain Foundations 28 and Data 28 cohorts for supporting me throughout this full-time boot camp while I also cared for my two-year-old and newborn baby. It has truly been a wonderful journey, and I thank you all for your support.</p>
+                </article>
+            </section>
+
+            <section class="references">
+                <h2>References</h2>
+                <ul>
+                    <li>BLS (Bureau of Labor Statistics). Annual Social and Economic Supplements, 1968-2008, Current Population Survey, U.S. Department of Labor. Retrieved from <a href="https://www.bls.gov/cps/data.htm" target="_blank">https://www.bls.gov/cps/data.htm</a>.</li>
+                    <li>BLS (Bureau of Labor Statistics). Wives' Income as Percentage of Total Income. Retrieved from <a href="https://www.bls.gov/opub/ted/2014/ted_20140602.htm" target="_blank">https://www.bls.gov/opub/ted/2014/ted_20140602.htm</a>.</li>
+                    <li>OECD (Organisation for Economic Co-operation and Development). Labour Force Statistics by Sex and Age - Composition. Retrieved from <a href="https://stats.oecd.org" target="_blank">https://stats.oecd.org</a>.</li>
+                    <li>U.S. Census Bureau. Table P-1, CPS Population and Per Capita Money Income, All People: 1967 to 2021. Retrieved from <a href="https://www.census.gov/topics/income-poverty/income/guidance/cps-historic-footnotes.html" target="_blank">https://www.census.gov/topics/income-poverty/income/guidance/cps-historic-footnotes.html</a>.</li>
+                    <li>U.S. Census Bureau. Table H-8, Median Household Income by State: 1984 to 2021. Retrieved from <a href="https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-income-households.html" target="_blank">https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-income-households.html</a>.</li>
+                    <li>Federal Reserve Bank of St. Louis. Average and Median Price for a New Home. Retrieved from <a href="https://www.federalreserve.gov/series/MPU" target="_blank">https://www.federalreserve.gov/series/MPU</a>.</li>
+                    <li>U.S. Census Bureau. Median Sale Price of Houses Sold for the United States. Retrieved from <a href="https://www.census.gov/construction/nrs/pdf/usprice.pdf" target="_blank">https://www.census.gov/construction/nrs/pdf/usprice.pdf</a>.</li>
+                    <li>OECD (Organisation for Economic Co-operation and Development). Net Childcare Costs for Parents Using Childcare Facilities. Retrieved from <a href="https://stats.oecd.org/Index.aspx?DataSetCode=NETC" target="_blank">https://stats.oecd.org/Index.aspx?DataSetCode=NETC</a>.</li>
+                    <li>United States Total Housing Inventory. Retrieved from <a href="https://tradingeconomics.com/united-states/total-housing-inventory" target="_blank">https://tradingeconomics.com/united-states/total-housing-inventory</a>.</li>
+                </ul>
+            </section>
+
+            <article class="story">
+                <h2>Background Story: Why this topic interested me</h2>
+                <p>
+                    My name is Kelsey Taylor, I am a wife and mother to two children and am currently employed as an Analytics Engineer. 
+                    I started my journey into a tech career out of desperate necessity to provide for my family, so the topic of mothers 
+                    in the workforce is of particular interest to me. When my husband got sick back in 2021, I was a stay-at-home mom 
+                    with no skillset or means to find work that could provide for my family. I found Tech-Mom’s and graduated Fall 2021, 
+                    and so began my journey to break into tech.
+                </p>
+                <p>
+                    The skills Tech-Mom’s taught me opened the door for a scholarship opportunity thereby allowing me to participate in 
+                    DevMountain’s Programming Bootcamp where I specialized in Data Analytics. Graduation from there was followed by an 
+                    Analytics Engineering internship, and eventual full-time employment as an Analytics Engineer, all while being a 
+                    full-time mother and caretaker to my 2-year-old and newborn baby.
+                </p>
+            </article> 
+    </div>
+    <footer id="contact">
+        <!-- <h1>Contact</h1> -->
+        <!-- <h3>I would love to connect!</h3> -->
+        <div class="footer-container">
+            <div class="icon-socials-container-2">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:dev.kelseytaylor@gmail.com" target="_blank"><p>dev.kelseytaylor@gmail.com</p></a>
+            </div>
+            <div class="icon-socials-container-2">
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/kelsey-ann/" target="_blank"><p>in/kelsey-ann</p></a>
+            </div>
+            <div class="icon-socials-container-2">
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/KelseyATaylor" target="_blank"><p>@KelseyATaylor</p></a>
+            </div>
+        </div>
+    </footer>
+
+
+    
+</body>
+</html>
