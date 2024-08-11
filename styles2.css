@@ -136,15 +136,53 @@ img {
     width: 80%
 }
 
+
+/* Acknowledgements */
+.acknowledgements {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #849a8a;
+    margin-bottom: 40px;
+}
+
+.acknowledgements h2 {
+    color:#849a8a;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.acknowledgements ul {
+    list-style-type:disc;
+    padding-left: 15px;
+}
+
+.acknowledgements ul li {
+    margin-bottom: 10px;
+    color: #ecf0f1;
+    font-size: 14px;
+}
+
+.acknowledgements ul li a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.acknowledgements ul li a:hover {
+    text-decoration: underline;
+    transition: .5s;
+}
+
+/* References */
+
 .references {
     margin-top: 40px;
     padding-top: 20px;
-    border-top: 1px solid #7f8c8d;
+    border-top: 1px solid #849a8a;
     margin-bottom: 100px;
 }
 
 .references h2 {
-    color: #7f8c8d;
+    color: #849a8a;
     font-size: 16px;
     margin-bottom: 10px;
 }
@@ -225,3 +263,27 @@ footer {
 		flex-direction: column;
 	}
 }
+
+
+/* For Webkit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+    border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scroll thumb */
+    border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scroll thumb on hover */
+}
+
+/* For Firefox */
+scrollbar-width: thin; /* Sets the scrollbar width to thin */
+scrollbar-color: #888 #f1f1f1; /* Sets the scrollbar thumb and track colors */

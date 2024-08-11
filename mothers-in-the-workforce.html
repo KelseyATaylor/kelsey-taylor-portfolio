@@ -13,11 +13,6 @@
     <div class="nav-container">
         <nav class="navbar">
             <a href="index.html"><img src="./assets/kelsey-taylor-logo.png" alt="kelsey-taylor-logo" class="logo" /></a>
-            <!-- Back Arrow -->
-            <!-- <div class="tooltip">
-                <a href="index.html"><span class="tooltiptext">Go Back</span></a>
-                
-              </div> -->
               <button class="back-button">Go Back</button>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -33,8 +28,9 @@
                 <h1>Mothers in the Workforce: A Need, No Longer a Choice</h1>
                 <p class="author">Presented by Kelsey Taylor | Mother & Analytics Engineer</p>
                 <p class="intro">
-                    This presentation was originally published November 2022 as part of the DevMountain Data Analytics Specialization program final Capstone Project.
-                    The full presentation can be viewed on YouTube: 
+                    The following was published as part of DevMountain’s Data Analytics Specialization program November 2022 as a final 
+                    Capstone Project and is being republished August 2024.
+                    The full original presentation can be viewed on YouTube: 
                     <a href="https://www.youtube.com/watch?v=llddQPmYU40&t=14s" target="_blank">“Mothers in the Workforce”.</a>
                 </p>
             </header>
@@ -60,7 +56,7 @@
                         </p>
                         <p>
                             During my exploratory data analysis and preliminary visualizations, I utilized Python and libraries such as Pandas, 
-                            Matplotlib, and Seaborn within a Jupyter notebook. For the final visualizations, I turned to Microsoft Power BI.
+                            Matplotlib, and Seaborn within a Jupyter notebook. Final visualizations were developed with Microsoft Power BI.
                         </p>
                     </div>
                     <div>
@@ -75,11 +71,13 @@
                         in the purchasing power of the dollar over time. The CPI is based on a market “basket” of consumer goods and services, 
                         comprising eight categories: food and beverages, housing, apparel, transportation, medical care, recreation, education 
                         and communication, and miscellaneous. Housing carries the heaviest weight in the CPI, meaning that as housing costs rise, 
-                        so does the CPI.
+                        so does the CPI. We'll explore this further in a moment. 
                     </p>
                     <img src="./assets/mothers-workforce-assets/CPI-ppt.png" alt="A powerpoint slide with the CPI definition">
                     <p>
-                        Examining the CPI over the last 60 years reveals a massive increase of 240 points. To put this into perspective, $150 in 1960 would buy you the same amount of goods as nearly $1,400 in 2021. Similarly, $150 in 2000 would equate to $236 in 2021. In short, prices are rising significantly. 
+                        Examining the CPI over the last 60 years reveals a massive increase of 240 points. To put this into perspective, 
+                        $150 in 1960 would buy you the same amount of goods as nearly $1,400 in 2021. Similarly, $150 in 2000 would equate 
+                        to $236 in 2021. In short, prices are rising significantly. 
                     </p>
                     <img src="./assets/mothers-workforce-assets/CPI-60yr-trend.png" alt="Bar graph depicting CPI trend over last 60 years">
                     </article>
@@ -92,54 +90,134 @@
                         of a million dollars.
                     </p>
                     <img src="./assets/mothers-workforce-assets/median-sale-price-US-homes.png" alt="Bar graph depicting Median Sale Price US Homes over last 60 years">
-                    <p>While rising prices in homes and other goods wouldn't be as concerning if incomes kept pace, the reality is starkly different. Comparing the rise in home prices to median income reveals a significant disparity. In 1984, the median home price was four times the median income. By 2021, it was 5.6 times the median income, and even higher in 2022.  </p>
+                    <p>While rising prices in homes and other goods wouldn't be as concerning if incomes kept pace, the reality is starkly different. 
+                        Comparing the rise in home prices to median income reveals a significant disparity. In 1984, the median home price was four 
+                        times the median income. By 2021, it was 5.6 times the median income, and even higher in 2022.  </p>
                     <img src="./assets/mothers-workforce-assets/median-income.png" alt="Graph depicting median income trend over 60 years">
                 </article>
 
                 <article class="US-Events">
                     <h2>The Housing Market and Economic Events</h2>
                     <p>
-                        To understand U.S. home prices further, we must consider historical events. In December 2007, the housing market crashed, plunging the U.S. into a financial crisis. Generally, houses either increase or maintain their value, but the 2008 Great Recession marked the first time in a century that housing prices fell. Then, in 2020, the COVID-19 pandemic led to an unprecedented 39% increase in home prices within just three years. 
+                        To understand U.S. home prices further, we must consider historical events. In December 2007, the housing market crashed, 
+                        plunging the U.S. into a financial crisis. Generally, houses will either increase or maintain their value, but the 2008 
+                        Great Recession marked the first time in a century that housing prices fell. Then, in 2020, the COVID-19 pandemic led to 
+                        an unprecedented 39% increase in home prices within just three years. 
                     </p>
                     <img src="./assets/mothers-workforce-assets/US-Events.png" alt="US events impacting cost of homes">
-                    <p>Given the skyrocketing prices, many, especially first-time homebuyers, are left wondering if there's an impending market crash. However, comparing conditions from 2007 to those of 2022 explains why most experts predict otherwise. There were 116 million households in 2007 and 128 million in 2022. New housing starts were 2.1 million in 2007, but only 1.4 million in 2022. In 2007, there were 4 million houses in inventory ready to be sold, compared to just 860,000 in 2022. With 12 million more potential buyers and significantly lower supply, demand far outweighs supply, indicating that high housing prices are likely here to stay.   </p>
+                    <p>Given the skyrocketing prices, many, especially first-time homebuyers, are left wondering if there's an impending market crash. 
+                        However, comparing conditions from 2007 to those of 2022 explains why most experts predict otherwise. There were 116 million 
+                        households in 2007 and 128 million in 2022. New housing starts were 2.1 million in 2007, but only 1.4 million in 2022. In 2007, 
+                        there were 4 million houses in inventory ready to be sold, compared to just 860,000 in 2022. With 12 million more potential 
+                        buyers and significantly lower supply, demand far outweighs supply, indicating that high housing prices are likely here to stay.   </p>
                     <img src="./assets/mothers-workforce-assets/Supply-Demand.png" alt="Chart depicting difference in housing stats from 2007 to 2022">
                 </article>
 
                 <article class="dual-income">
                     <h2>The Necessity of Dual-Income Families</h2>
                     <p>
-                        With the cost of living and housing only increasing, the question arises: How do we afford it? The answer lies in dual-income families. Analyzing the number of employed women per capita, particularly those aged 25 to 34, shows the greatest increase in employment since the 1960s. This age group, traditionally expected to be at home raising children, is now significantly represented in the workforce. This shift indicates that staying home to maintain the household is no longer a viable option. Women in their childbearing years must work to keep up with the cost of living.  
+                        With the cost of living and housing only increasing, the question arises: How do we afford it? The answer lies in dual-income 
+                        families. Analyzing the number of employed women per capita, particularly those aged 25 to 34, shows the greatest increase in 
+                        employment since the 1960s. This age group, traditionally the demographic having children, is now significantly 
+                        represented in the workforce. This shift may indicate that staying home to maintain a household is no longer a viable option. 
+                        If women in their childbearing years choose to stay home, they face significant financial strain, making it necessary for many 
+                        to work just to keep up with the rising cost of living.  
                     </p>
                     <img src="./assets/mothers-workforce-assets/women-ages-25-34-employment.png" alt="Line chart showing women ages 25-34 employment">
-                    <p>Comparing employment numbers reveals that most families already rely on combined incomes from both spouses. While there was a slight dip in 2008 due to unemployment, the overall trend continues to rise. Mothers can no longer afford to stay at home, as their families depend on their income. </p>
+                    <p>Comparing employment numbers reveals that most families already rely on combined incomes from both spouses. While there was a 
+                        slight dip in 2008, likely due to unemployment, the overall trend continues to rise. Mothers can no longer afford to stay at home 
+                        because their families depend on their income. </p>
                     <img src="./assets/mothers-workforce-assets/husband-and-wife-incomes.png" alt="husband and wife combined incomes">
                 </article>
     
                 <article class="solutions">
-                    <h2>Conclusion & Proposed Solutions</h2>
-                    <p>So, what can we do about this? My answer: normalize families in work environments. They most assuredly are going to be there. Here are my proposed action steps:</p>
+                    <h2>Proposed Solutions</h2>
+                    <p>So, what can we do about this? The reflex is often to focus on elaborate economic measures that require considerable resources and 
+                        more time than struggling families can afford to wait. Companies and employers can make a real difference today by adopting methods 
+                        that directly support families. So again the question, what can we do about this? My answer: normalize families in work environments. 
+                        They most assuredly are going to be there.</p>
+                        <p>Here are my proposed action steps:</p>
                     <ol>
-                        <li>Make Companies Family-Friendly</li><p>Encourage companies to be accepting of employees' families. Don't hide your family from your employer. Companies should allow employees to have their children in the background during Zoom meetings without making it a big deal.
-                        </p>
-                        <li>Flexible Schedules</li><p>Offer flexible schedules. Many mothers, including myself, are highly productive during the morning or after their kids have gone to bed.</p>
-                        <li>Substantial Maternity and Paternity Leave</li><p>This should be standard. Supporting a mother by allowing her spouse or partner to be home during the early days with a new baby is crucial.
-                        </p>
-                        <li>Increase Part-Time Positions</li><p>Make more part-time positions available. Many parents would love to increase their family income on a part-time basis, especially when traditional working hours may not typically work for a dual-income family.
-                        </p>
-                        <li>Permanent Remote and Hybrid Positions</li><p>Make these permanent options. While we enjoy each other's company, most of us would prefer to spend our breaks with our families. Additionally, remote work allows parents more flexibility should a child become sick and not be able to attend school.
-                        </p>
-                        <li>In-House Daycares and Child Care Credits</li><p>Offer these as part of benefits packages. Imagine nurses being able to check on their children at the hospital's employee daycare during breaks, making long shifts more bearable.
-                        </p>
-                        <li>Normalize Career Breaks and Resume Gaps</li><p>They aren't a big deal, especially considering the numerous reasons someone might need a break from work.</p>
+                        <li>Make Companies Family-Friendly</li><p>Encourage companies to be accepting of employees' families. Don't hide your family from your 
+                            employer. Where applicable, companies should allow employees to have their children in the background during Zoom meetings without 
+                            making it a big deal. Coworkers and managers alike can offer patience and grace when a parent needs to step away to take care 
+                            of family matters.</p>
+                        <li>Flexible Schedules</li><p>Offer flexible schedules. Top professionals increasingly gravitate toward companies that prioritize 
+                            flexibility, and by doing so, businesses can significantly expand their talent pool. Many mothers, myself included, are highly 
+                            productive during the early morning or late evening hours, often needing time in the afternoon for school drop-offs and pick-ups. 
+                            However, they are ready to resume work later in the day. Allowing working parents the flexibility to complete tasks from home or 
+                            join meetings virtually, when feasible, not only supports their ability to balance work and family but also enhances the company's 
+                            ability to attract and retain top-tier talent. </p>
+                        <li>Substantial Maternity and Paternity Leave</li><p>This should be standard practice. Supporting a mother during the early days with a 
+                            new baby is crucial, and a key aspect of this support is allowing her spouse or partner to be home as well. The early postpartum 
+                            period is critical for both physical recovery and bonding with the newborn. When a partner is given the opportunity to be present, 
+                            it not only eases the mother's burden but also helps ensure that she feels more supported and valued. This approach can make mothers 
+                            feel more confident about returning to work after their leave and more happy to do so, ultimately aiding in talent retention and 
+                            fostering a more committed and engaged workforce.</p>
+                        <li>Increase Part-Time Positions</li><p>Increase the availability of part-time positions. Many parents would love to contribute to their 
+                            family income on a part-time basis, especially when traditional 9-to-5 hours do not align with their household needs. Part-time roles 
+                            can facilitate the maintenance of licenses and skill sets. As circumstances change, children grow older, and parents' time constraints 
+                            decrease, these part-time employees can transition to full-time roles ultimately reducing onboarding time, accelerating time-to-value, 
+                            and saving the company money.</p>
+                        <li>Permanent Remote and Hybrid Positions</li><p>Make these options permanent. Employees should not live in fear of taking a position with 
+                            a concern that the remote or hybrid benefit will one-day be rescinded and workers forced back to the office. While we value the 
+                            camaraderie of in-person interactions, many employees would prefer to spend their breaks with their families. Furthermore, remote work 
+                            provides essential flexibility for parents, such as when a child becomes sick and cannot attend school or daycare. By offering permanent 
+                            remote and hybrid positions, companies support a better work-life balance, enhance employee satisfaction, and accommodate the diverse 
+                            needs of their workforce. </p>
+                        <li>In-House Daycares, Child Care Credits, and Stipends</li><p>Offering these as part of benefits packages can significantly decrease the 
+                            childcare cost burden on families. Many families find themselves opting for a single income because the net pay of the second-income 
+                            worker, after covering childcare expenses, amounts to zero. By supporting childcare needs, companies can, again, boost employee retention, 
+                            attract top talent, and demonstrate their recognition of the importance of family, reinforcing their commitment to a supportive and 
+                            inclusive workplace. Imagine nurses being able to check on their children at the hospital's employee daycare during breaks, making long 
+                            shifts more manageable.</p>
+                        <li>Normalize Career Breaks and Resume Gaps</li><p>They aren't a big deal, especially considering the numerous reasons someone might need a 
+                            break from work, such as caregiving, addressing personal physical or mental health, or pursuing further education. Many mothers take 
+                            career breaks (or as my friend calls it, a "Power Pause"), but this doesn't mean mothers aren't still developing valuable skills. 
+                            Managing a household, balancing a budget, coordinating evolving schedules, and handling daily crises under pressure enhances high-demand 
+                            soft skills such as problem-solving, time management, adaptability, negotiation, communication, organization, and leadership. These 
+                            experiences contribute to a person's growth and resilience making them emotionally present and prepared to add value to their 
+                            companies upon re-entering the workforce.</p>
                     </ol>
                 </article>
 
                 <article class="content">
-                    <p>By implementing these actions, we can better support both mothers and fathers in the workforce while still ensuring they can support their families.</p>
-                    <p>Thank you for watching my presentation. A special shout-out to my DevMountain Foundations 28 and Data 28 cohorts for supporting me throughout this full-time boot camp while I also cared for my two-year-old and newborn baby. It has truly been a wonderful journey, and I thank you all for your support.</p>
+                    <h2>Conclusion</h2>
+                    <p>By implementing these actions, we can create a more supportive and equitable workplace for both mothers and fathers. Offering flexibility, 
+                        providing childcare support, and normalizing career breaks help working parents balance their professional and family responsibilities. In 
+                        our current economic environment, raising a family on a single income has become an increasingly rare luxury, making it essential for working 
+                        parents, particularly working mothers, to receive support from their employers. These changes not only enhance employee satisfaction and 
+                        retention but also strengthen our organizations by leveraging a diverse range of skills and experiences. Ultimately, by embracing these 
+                        strategies, we foster a work environment where all employees are empowered to thrive, contributing to their families and our collective 
+                        success.</p>
                 </article>
             </section>
+
+            <section class="acknowledgements">
+                <h2>Acknowledgements</h2>
+                <ul>
+                    <li>A special shout-out to my DevMountain Foundations 28 and Data 28 cohorts for supporting me throughout my full-time boot camp while I also simultaneously
+                        cared for my two-year-old and newborn baby. It has truly been a wonderful journey, and I thank you all for your support.</li>
+                    <li>Thank you goes to the Non-Profit Tech-Moms (see <a href="https://www.tech-moms.org/" target="_blank">Tech-Moms.org</a>) for all the support and encouragement they have given me. Thank you 
+                        for believing in me when I didn’t have enough courage to believe in myself.</li>
+            </section>
+
+            <article class="story">
+                <h2>Background Story: Why this topic interested me</h2>
+                <p>
+                    My name is Kelsey Taylor, I am a wife and mother to two children and am currently employed as an Analytics Engineer. 
+                    I started my journey into a tech career out of desperate necessity to provide for my family, so the topic of mothers 
+                    in the workforce is of particular interest to me. When my husband got sick back in 2021, I was a stay-at-home mom 
+                    with no skillset or means to find work that could provide for my family. I found Tech-Mom’s and graduated Fall 2021, 
+                    and so began my journey to break into tech.
+                </p>
+                <p>
+                    The skills Tech-Mom’s taught me, and the confidence they instilled, opened the door for a scholarship opportunity thereby allowing me to participate in 
+                    DevMountain’s Programming Bootcamp where I specialized in Data Analytics. Graduation from there was followed by an 
+                    Analytics Engineering internship, and eventual full-time employment as an Analytics Engineer, all while being a 
+                    full-time mother and caretaker to my 2-year-old and newborn baby.
+                </p>
+            </article> 
 
             <section class="references">
                 <h2>References</h2>
@@ -156,22 +234,7 @@
                 </ul>
             </section>
 
-            <article class="story">
-                <h2>Background Story: Why this topic interested me</h2>
-                <p>
-                    My name is Kelsey Taylor, I am a wife and mother to two children and am currently employed as an Analytics Engineer. 
-                    I started my journey into a tech career out of desperate necessity to provide for my family, so the topic of mothers 
-                    in the workforce is of particular interest to me. When my husband got sick back in 2021, I was a stay-at-home mom 
-                    with no skillset or means to find work that could provide for my family. I found Tech-Mom’s and graduated Fall 2021, 
-                    and so began my journey to break into tech.
-                </p>
-                <p>
-                    The skills Tech-Mom’s taught me opened the door for a scholarship opportunity thereby allowing me to participate in 
-                    DevMountain’s Programming Bootcamp where I specialized in Data Analytics. Graduation from there was followed by an 
-                    Analytics Engineering internship, and eventual full-time employment as an Analytics Engineer, all while being a 
-                    full-time mother and caretaker to my 2-year-old and newborn baby.
-                </p>
-            </article> 
+            
     </div>
     <footer id="contact">
         <!-- <h1>Contact</h1> -->
